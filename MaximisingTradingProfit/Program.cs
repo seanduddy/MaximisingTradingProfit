@@ -8,6 +8,7 @@ namespace MaximisingTradingProfit
         static void Main(string[] args)
         {
             //Dictionary to store, date and value of asset.
+            //Load test data into dictionary.
             var priceDates = new Dictionary<DateTime, int>()
             {
                 {new DateTime(2021, 01, 01), 23},
@@ -21,18 +22,6 @@ namespace MaximisingTradingProfit
                 {new DateTime(2021, 09, 01), 9},
                 {new DateTime(2021, 10, 01), 20}
             };
-
-            //Load test data into dictionary.
-            priceDates.Add(
-            priceDates.Add(
-            priceDates.Add(
-            priceDates.Add(
-            priceDates.Add(
-            priceDates.Add(;
-            priceDates.Add(;
-            priceDates.Add(;
-            priceDates.Add(
-            priceDates.Add(
 
             //Initalise variables.
             var maxDiff = new int();
