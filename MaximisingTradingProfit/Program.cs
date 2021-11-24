@@ -7,7 +7,7 @@ namespace MaximisingTradingProfit
     {
         static void Main(string[] args)
         {
-            //Dictionary to store, date and value of asset.
+            //Dictionary to store date and value of asset.
             //Load test data into dictionary.
             var priceDates = new Dictionary<DateTime, int>()
             {
@@ -31,7 +31,7 @@ namespace MaximisingTradingProfit
             //Loop through each date starting from the first date.
             foreach (KeyValuePair<DateTime, int> priceDateLeft in priceDates) 
             {
-                //Loop through every date after and find the biggerest difference in price we can.
+                //Loop through every date after and find the biggest difference in price we can.
                 foreach (KeyValuePair<DateTime, int> priceDateRight in priceDates)
                 {
                     //Not interested in anything before or equal to the leftmost date.
@@ -51,7 +51,7 @@ namespace MaximisingTradingProfit
                 }
             }
 
-            //Print results and final readkey to prevent console dissapearing.
+            //Print results and final readkey to prevent console disappearing.
             Console.WriteLine(string.Concat(maxDiff," difference "));
             Console.WriteLine(string.Concat("The best date to buy was: ", lDate));
             Console.WriteLine(string.Concat("The best time to sell was: ", rDate));
